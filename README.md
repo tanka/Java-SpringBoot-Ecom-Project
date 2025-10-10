@@ -1,6 +1,7 @@
 
 <h2>👨‍💻 Spring Boot Backend</h2>
--	Backend for a Full-Stack RESTful e-commerce application using Spring Boot. The platform has distinct functionalities for customers, admins, and sellers. 
+
+- Backend for a Full-Stack RESTful e-commerce application using Spring Boot. The platform has distinct functionalities for customers, admins, and sellers. 
 
 -	Implemented Spring Security with JWT-based authentication, role-based access control, and comprehensive RESTful APIs for product, order, and user management. Enhanced user experience by adding features such as pagination, sorting, and input validation.
   
