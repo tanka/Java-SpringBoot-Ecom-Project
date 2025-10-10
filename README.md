@@ -9,7 +9,9 @@
 
 
 <h2>Database Design</h2>
+
 ![Database Design](https://github.com/tanka/Java-SpringBoot-Ecom-Project/blob/master/err-diagram.PNG)
 
 <h2>API endpoints for the first Entity</h2>
+
 ![API Design for first Entity](https://github.com/tanka/Java-SpringBoot-Ecom-Project/blob/master/application-end-points.PNG)
