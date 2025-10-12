@@ -19,11 +19,12 @@ public class OrderItem {
     private Double orderedProductPrice;
     private Integer quantity;
 
-
+    // this table will have foreign key of order table
     @ManyToOne
     @JoinColumn(name = "order_id")
     private Order order;
 
+    // this table will have foreign key of product table
     @ManyToOne
     @JoinColumn(name = "product_id")
     private Product product;
