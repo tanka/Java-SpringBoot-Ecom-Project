@@ -15,7 +15,7 @@ import lombok.NoArgsConstructor;
 public class Payment {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private String paymentId;
+    private Long paymentId;
 
     @NotBlank
     @Size(min = 3, message = "Payment method must be atleast 3 characters")
@@ -34,7 +34,7 @@ public class Payment {
 
     // custom constructor to create payment object without order Information.  To conect to the payment gateway and later add
     // order information.
-    public Payment(String paymentId, String pgPaymentId, String pgStatus, String pgResponseMessage, String pgName) {
+    public Payment(Long paymentId, String pgPaymentId, String pgStatus, String pgResponseMessage, String pgName) {
         this.paymentId = paymentId;
         this.pgPaymentId = pgPaymentId;
         this.pgStatus = pgStatus;

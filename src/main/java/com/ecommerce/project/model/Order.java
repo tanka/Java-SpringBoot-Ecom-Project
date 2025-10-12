@@ -47,6 +47,4 @@ public class Order {
     @ManyToOne
     @JoinColumn(name = "address_id")
     private Address address;
-
-
 }
