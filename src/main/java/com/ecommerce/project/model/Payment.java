@@ -29,13 +29,16 @@ public class Payment {
     // --
     private String paymentStatus; // e.g., Completed, Pending, Failed
     private Double amount;
+
     @OneToOne(mappedBy = "payment", cascade = {CascadeType.PERSIST, CascadeType.MERGE})
     private Order order;
 
     // custom constructor to create payment object without order Information.  To conect to the payment gateway and later add
     // order information.
-    public Payment(Long paymentId, String pgPaymentId, String pgStatus, String pgResponseMessage, String pgName) {
-        this.paymentId = paymentId;
+    public Payment(String paymentMethod, String pgPaymentId,
+                   String pgStatus, String pgResponseMessage,
+                   String pgName) {
+        this.paymentMethod = paymentMethod;
         this.pgPaymentId = pgPaymentId;
         this.pgStatus = pgStatus;
         this.pgResponseMessage = pgResponseMessage;
